@@ -4,17 +4,7 @@ body{
     background: url(resource/background.jpg) no-repeat;
     background-size: cover;
 }
-.tabel{
-  width: 800px;
-  background: rgba(0,0,0,0.4);
-  padding: 40px;
-  text-align: center;
-  margin: auto;
-  margin-top: 5%;
-  color: white;
-  font-family: 'Century Gothic', sans-serif;
-  display: none;
-}
+
 .box{
     width: 450px;
     background: rgba(0,0,0,0.4);
@@ -26,14 +16,13 @@ body{
     font-family: 'Century Gothic', sans-serif;
     display: block;
 }
-.fb{
-  list-style-image: url(facebook.png);
-}
+
 .box-img{
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
+
 .box h1,
 .showbio h1,
 .tabel h1{
@@ -41,26 +30,31 @@ body{
     letter-spacing: 4px;
     font-weight: 100;
 }
+
 .box h5,
 .showbio h5{
     font-size: 20px;
     letter-spacing: 3px;
     font-weight: 100;
 }
+
 .box p,
 .showbio p{
     text-align: justify;
 }
+
 ul{
     margin: 0;
     padding: 0;
 }
+
 .box li,
 .showbio li{
     display: inline-block;
     margin: 6px;
     list-style: none;
 }
+
 .box-button,
 .showbio-button{
     outline: none;
@@ -70,10 +64,12 @@ ul{
     border-radius: 12px;
     color: #fff;
 }
+
 .box-button:hover{
     background-color: rgb(181, 181, 247);
     color: rgb(230, 201, 201);
 }
+
 box li a{
     color: white;
     text-decoration: none;
@@ -95,6 +91,19 @@ box li a{
   font-family: 'Century Gothic', sans-serif;
   display: none;
 }
+
+.tabel{
+  display: none;
+  width: 800px;
+  background: rgba(0,0,0,0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}
+
 .kolom{
   display: none;
   position: relative;
@@ -119,6 +128,7 @@ box li a{
   position: relative;
   display: grid;
 }
+
 .calculator .value,
 .calculator span.close{
   grid-column: span 4;
