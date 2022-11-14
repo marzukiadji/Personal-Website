@@ -11,12 +11,12 @@
     <title>UTS PERSONAL WEBSITE</title>
     <script>
         // Function Popup Bio
-        function openPopup() {
+        function openBio() {
             document.getElementById("box").style.display = "none";
             document.getElementById("bio").style.display = "block";
         }
 
-        function closePopup() {
+        function closeBio() {
             document.getElementById("box").style.display = "block";
             document.getElementById("bio").style.display = "none";
         }
@@ -35,33 +35,32 @@
         }
 
         // function Kalkulator
-        function openForm() {
+        function openCalc() {
             document.getElementById("cal").style.display = "flex";
         }
 
-        function closeForm() {
+        function closeCalc() {
             document.getElementById("cal").style.display = "none";
         }
     </script>
 </head>
-<body>
+<body class="container">
 
-    <div class=" container box" id="box">
+    <div class="box" id="box">
         <img src="resource/profile.jpg" alt="" class="box-img">
         <h1>Akhmad Adjie Marzuki</h1>
-        <h5>Mahasiswa Teknik Informatika <br>
-            UPB
-        </h5>
-        <p>Hello everyone!! <br>This is my personal website, u guys can found me in the social media below here. cheerrss!! </p>
+        <h5>Mahasiswa Teknik Informatika   UPB</h5>
+        <p>Hello everyone!! <br>
+        This is my personal website, u guys can found me in the social media below here. cheerrss!! </p>
         <ul>
             <li class="fb"><a href="https://www.facebook.com/Iam.Luciferz"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
             <li><a href="https://github.com/marzukiadji" ><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
             <li><a href="https://twitter.com/adjimarzuki16"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
         </ul>
-        <ul><li><button class="box-button" onclick="openPopup()">Bio</button></li></ul>
+        <ul><li><button class="box-button" onclick="openBio()">Bio</button></li></ul>
     </div>
 
-    <div class="container showbio" id="bio">
+    <div class="showbio" id="bio">
         <h1>Akhmad Adjie Marzuki</h1>
         <h5>Mahasiswa Teknik Informatika <br>UPB</h5>
         <h2 style="text-align: justify;">Bio</h2>
@@ -77,7 +76,7 @@
         </p>
         <ul>
             <li><button class="box-button" onclick="openJob()">Next</button></li>
-            <li><button class="box-button" onclick="closePopup()">Close</button></li>
+            <li><button class="box-button" onclick="closeBio()">Close</button></li>
         </ul>
     </div>
 
@@ -135,8 +134,8 @@
     </div>
 
     <button class="box-button" style="font-size: smaller;background-color: rgba(0, 0, 0, 0.404);"
-    type="button" onclick="openForm()">CALCULATOR</button>
-    <div class="container kolom" id="cal">
+    type="button" onclick="openCalc()">CALCULATOR</button>
+    <div class="kolom" id="cal">
         <form class="calculator" name="calc">
             <input class="value" type="text" name="txt" readonly="">
             <span class="num clear" onclick="document.calc.txt.value ='' ">C</span>
@@ -157,7 +156,7 @@
             <span class="num" onclick="document.calc.txt.value +='00' ">00</span>
             <span class="num" onclick="document.calc.txt.value +='.' ">.</span>
             <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
-            <span class="num close" onclick="closeForm()">close</span>
+            <span class="num close" onclick="closeCalc()">close</span>
         </form>
     </div>
 </body>
