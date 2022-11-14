@@ -59,24 +59,20 @@ ul{
 .showbio-button{
     outline: none;
     border-style: hidden;
-    font-size: 10px;
-    background-color: rgba(119, 105, 245, 0.815);
-    border-radius: 12px;
-    color: #fff;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 8px;
+    color: rgba(14, 0, 0, 0.425);
 }
 
-.box-button:hover{
-    background-color: rgb(181, 181, 247);
-    color: rgb(230, 201, 201);
-}
-
-box li a{
+.box li a{
     color: white;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 25px;
     transition: all ease-in-out 250ms;
 }
-.box li a:hover{
+.box li a:hover,
+.box-button:hover{
     color: #b9b9b9;
 }
 
@@ -117,18 +113,10 @@ box li a{
   background: #00000034;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-  box-sizing: border-box;
-}
-
 .calculator {
   position: relative;
   display: grid;
 }
-
 .calculator .value,
 .calculator span.close{
   grid-column: span 4;
